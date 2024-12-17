@@ -24,4 +24,11 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+# Homebrew package manager
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# Default editor
+export EDITOR=$(which vim)
+
+# Aliases
+alias cat="bat"
