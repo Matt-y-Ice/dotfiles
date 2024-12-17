@@ -33,8 +33,14 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # Initialize zoxide
 eval "$(zoxide init bash)"
 
+# Initialize starship
+eval "$(starship init bash)"
+
 # Default editor
 export EDITOR=$(which vim)
+
+# Add doom emacs to path
+export PATH="$PATH:$HOME/.config/emacs/bin"
 
 # Aliases
 alias cat="bat"
