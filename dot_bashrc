@@ -24,6 +24,9 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+# Start SSH agent and add key
+eval "$(ssh-agent -s)"
+
 # Homebrew package manager
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
