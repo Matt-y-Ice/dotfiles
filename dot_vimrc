@@ -92,8 +92,14 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'dense-analysis/ale'
     Plug 'preservim/nerdtree'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
+
+set termguicolors
+let ayucolor="mirage"
+colorscheme ayu
 
 " }}}
 

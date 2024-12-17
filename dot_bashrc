@@ -27,8 +27,13 @@ unset rc
 # Homebrew package manager
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+# Initialize zoxide
+eval "$(zoxide init bash)"
+
 # Default editor
 export EDITOR=$(which vim)
 
 # Aliases
 alias cat="bat"
+alias cd="z"
+alias ls="lsd"
