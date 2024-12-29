@@ -43,7 +43,7 @@ if type -q starship
 end
 
 # Default editor
-set -x EDITOR (which vim)
+set -x EDITOR (which hx)
 
 # Add Doom Emacs to PATH
 set -x PATH $PATH $HOME/.config/emacs/bin
@@ -53,3 +53,7 @@ alias cat="bat"
 alias cd="z"
 alias ls="lsd"
 
+if set -q ZELLIJ
+else
+    zellij
+end

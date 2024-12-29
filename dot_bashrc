@@ -37,12 +37,19 @@ eval "$(zoxide init bash)"
 eval "$(starship init bash)"
 
 # Default editor
-export EDITOR=$(which vim)
+export EDITOR=$(which hx)
 
 # Add doom emacs to path
 export PATH="$PATH:$HOME/.config/emacs/bin"
+
+# Add cargo to path
+. "$HOME/.cargo/env"
 
 # Aliases
 alias cat="bat"
 alias cd="z"
 alias ls="lsd"
+
+eval "$(zellij setup --generate-auto-start bash)"
+
+exec fish
